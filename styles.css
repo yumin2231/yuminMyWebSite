@@ -1,0 +1,58 @@
+/* リセットCSS（ブラウザのデフォルトスタイルをリセット） */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ヘッダーのスタイル */
+  header {
+    background-color: #5CE1E6; /* ヘッダーの背景色 */
+    color: #000000; /* ヘッダーのテキスト色 */
+    padding: 20px; /* ヘッダー内部の余白 */
+   
+    bottom: 0; /* 画面下部に配置 */
+    width: 100%; /* ヘッダーの幅を100%に設定 */
+    display: flex; /* ナビゲーションを中央寄せにするために追加 */
+    justify-content: center; /* ナビゲーションを中央寄せにするために追加 */
+  }
+  
+  /* ナビゲーションメニューのスタイル */
+  nav ul {
+    list-style: none;
+    display: flex; /* リスト項目を横並びに配置 */
+  }
+  
+  nav li {
+    margin-left: 20px; /* リスト項目の間隔 */
+  }
+  
+  nav li:first-child {
+    margin-left: 0; /* 最初のリスト項目の間隔をリセット */
+  }
+  
+  nav li a {
+    color: #fff; /* リンクのテキスト色 */
+    text-decoration: none; /* 下線を削除 */
+  }
+  
+  nav li a:hover {
+    text-decoration: underline; /* マウスオーバー時に下線を表示 */
+  }
+  
+  /* 著作権表示のスタイル */
+  footer {
+    text-align: left; /* テキストを左寄せにする */
+    padding-left: 20px; /* テキストとヘッダーの間隔 */
+    position: absolute; /* 著作権を画面下部に固定 */
+    bottom: 0; /* 画面下部に配置 */
+    left: 0; /* ヘッダーの左端に配置 */
+    width: 100%; /* テキストの幅を100%に設定 */
+    color: #fff; /* テキスト色 */
+    font-size: 12px; /* テキストのフォントサイズ */
+  }
+  
+  /* コンテンツのスタイル */
+  .content {
+    padding-top: 80px; /* ヘッダーの高さだけコンテンツが下にずれないように余白を追加 */
+  }
+  
