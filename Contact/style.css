@@ -1,0 +1,30 @@
+body{
+  background-color: #01B0F1;
+}
+
+header{
+    text-align: center;
+    max-width: 944px;
+     background-color: #ffffff;
+     border-radius: 8px;
+     overflow: hidden;
+     margin:0 auto;
+}
+
+#main{
+  text-align: center;
+  max-width: 944px;
+   background-color: #ffffff;
+   border-radius: 8px;
+   overflow: hidden;
+   margin:0 auto;
+}
+footer {
+    font-size: 20px;
+    text-align: center;
+    max-width: 944px;
+     background-color: #ffffff;
+     border-radius: 8px;
+     overflow: hidden;
+     margin:0 auto;
+}
