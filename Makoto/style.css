@@ -91,3 +91,34 @@ footer {
 #select_none{
     user-select: none;
 }
+nav{
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline;
+} 
+nav a {
+    text-decoration: none;
+}
+button {
+    background-color: #00c3ff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+}
+.red{
+    color: red;
+}
