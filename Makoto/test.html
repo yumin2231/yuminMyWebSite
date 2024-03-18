@@ -1,22 +1,25 @@
-<html>
-  <head>
-    <title>reCAPTCHA demo: Explicit render after an onload callback</title>
-    <script type="text/javascript">
-      var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-          'sitekey' : 'your_site_key'
-        });
-      };
-    </script>
-  </head>
-  <body>
-    <form action="?" method="POST">
-      <div id="html_element"></div>
-      <br>
-      <input type="submit" value="Submit">
+<div class="container">
+    <form action="ServerLink.html" method="POST">
+        <p><input type="checkbox" id="with-consent" name="with-consent">
+            <label for="with-consent">同意する</label>
+        </p>
+        <div class="right">
+            <div class="font32">
+                <button type="submit" disabled id="submit">参加</button>
+            </div>
+        </div>
     </form>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-    </script>
-  </body>
-</html>
+</div>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    const consent = document.querySelector("#with-consent");
+const button = document.querySelector("#submit");
+consent.addEventListener('change', () => {
+    if (consent.checked === true) {
+        button.disabled = false;
+    } else {
+        button.disabled = true;
+    }
+});
+</script>
