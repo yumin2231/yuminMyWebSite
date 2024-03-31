@@ -32,6 +32,11 @@ table{
   border-collapse: collapse
 }
 
-img{
+.imges{
+  user-select: none;
+}
+
+.img{
   pointer-events: none;
+  user-select: none;
 }
